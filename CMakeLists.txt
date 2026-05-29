@@ -62,7 +62,7 @@ file(GLOB_RECURSE DOC_XML LIST_DIRECTORIES NO CONFIGURE_DEPENDS "${PROJECT_SOURC
 # conditionally add doc data to compile output
 if(DOC_XML)
     if(GODOTCPP_TARGET MATCHES "editor|template_debug")
-        target_doc_sources(${LIBNAME} ${DOC_XML})
+        target_doc_sources(${LIBNAME} "${DOC_XML}")
     endif()
 endif()
 
